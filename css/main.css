@@ -55,7 +55,7 @@
 }
 
 #grid-udp {
-  grid-template-columns: repeat(2, minmax(216px, 380px));
+  grid-template-columns: repeat(2, minmax(108px, 380px));
   grid-template-rows: repeat(3, 170px);
   grid-template-areas:
     "src dest"
