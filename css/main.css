@@ -1,0 +1,64 @@
+.grid {
+  display: grid;
+  gap: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  justify-content: center;
+  max-width: auto;
+}
+#grid-ipv4 {
+  grid-template-columns: repeat(24, minmax(9px, 30px));
+  grid-template-rows: repeat(10, 50px);
+  grid-template-areas:
+    "version version version internet internet internet ds ds ds ds ds ds tl tl tl tl tl tl tl tl tl tl tl tl"
+    "version version version internet internet internet dscp dscp dscp ecn ecn ecn tl tl tl tl tl tl tl tl tl tl tl tl"
+    "id id id id id id id id id id id id flag flag flag flag frag frag frag frag frag frag frag frag"
+    "id id id id id id id id id id id id flag flag flag flag frag frag frag frag frag frag frag frag"
+    "ttl ttl ttl ttl ttl ttl pr pr pr pr pr pr cs cs cs cs cs cs cs cs cs cs cs cs"
+    "ttl ttl ttl ttl ttl ttl pr pr pr pr pr pr cs cs cs cs cs cs cs cs cs cs cs cs"
+    "src src src src src src src src src src src src src src src src src src src src src src src src"
+    "src src src src src src src src src src src src src src src src src src src src src src src src"
+    "dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst"
+    "dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst";
+}
+
+#grid-ipv6 {
+  grid-template-columns: repeat(24, minmax(9px, 30px));
+  grid-template-rows: repeat(12, 41px);
+  grid-template-areas:
+    "version version version version traffic traffic traffic traffic traffic flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow"
+    "version version version version traffic traffic traffic traffic traffic flow flow flow flow flow flow flow flow flow flow flow flow flow flow flow"
+    "pl pl pl pl pl pl pl pl pl pl pl pl nh nh nh nh nh nh hl hl hl hl hl hl"
+    "pl pl pl pl pl pl pl pl pl pl pl pl nh nh nh nh nh nh hl hl hl hl hl hl"
+    "src src src src src src src src src src src src src src src src src src src src src src src src"
+    "src src src src src src src src src src src src src src src src src src src src src src src src"
+    "src src src src src src src src src src src src src src src src src src src src src src src src"
+    "src src src src src src src src src src src src src src src src src src src src src src src src"
+    "dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst"
+    "dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst"
+    "dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst"
+    "dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst dst";
+}
+
+#grid-tcp {
+  grid-template-columns: repeat(6, minmax(36px, 126px));
+  grid-template-rows: repeat(7, 75px);
+  grid-template-areas:
+    "src src src dst dst dst"
+    "sqn sqn sqn sqn sqn sqn"
+    "ack ack ack ack ack ack"
+    "hl res cont wd wd wd"
+    "check check check urg urg urg"
+    "opt opt opt opt opt opt"
+    "app app app app app app ";
+}
+
+#grid-udp {
+  grid-template-columns: repeat(2, minmax(216px, 380px));
+  grid-template-rows: repeat(3, 170px);
+  grid-template-areas:
+    "src dest"
+    "ln check"
+    "app app";
+}

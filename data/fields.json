@@ -1,0 +1,275 @@
+[
+  {
+    "headerType": "ipv4",
+    "name": "Version",
+    "description": "Thiswill be for v4, as opposed to v6, a 4 bit field= 0100",
+    "gridArea": "version",
+    "color": "primary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Internet Header Length",
+    "description": null,
+    "gridArea": "internet",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "DS",
+    "description": "Differentiated Services: Used for QoS: DiffServ–DS field or the older IntServ–ToSor Type of Service",
+    "gridArea": "ds",
+    "color": "info"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "DSCP",
+    "description": null,
+    "gridArea": "dscp",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "ECN",
+    "description": null,
+    "gridArea": "ecn",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Total Length",
+    "description": null,
+    "gridArea": "tl",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Identification",
+    "description": null,
+    "gridArea": "id",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Flag",
+    "description": null,
+    "gridArea": "flag",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Fragment Offset",
+    "description": null,
+    "gridArea": "frag",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Time-to-Live",
+    "description": "Layer 3 hop count. When it becomes zero the routerwill discard the packet",
+    "gridArea": "ttl",
+    "color": "info"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Protocol",
+    "description": "I.D.s next level protocol: ICMP, TCP, UDP, etc.",
+    "gridArea": "pr",
+    "color": "primary"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Header Checksum",
+    "description": "Detect corruption in the IPv4 header",
+    "gridArea": "cs",
+    "color": "success"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Source IP Address",
+    "description": "32 bit source address",
+    "gridArea": "src",
+    "color": "warning"
+  },
+  {
+    "headerType": "ipv4",
+    "name": "Destination IP Address",
+    "description": "32 bit destination address",
+    "gridArea": "dst",
+    "color": "primary"
+  },
+  {
+    "headerType": "udp",
+    "name": "Source Port (16)",
+    "description": "A 16-bit field used to identify the source application by port number.",
+    "gridArea": "src",
+    "color": "success"
+  },
+  {
+    "headerType": "udp",
+    "name": "Destination Port (16)",
+    "description": "A 16-bit field used to identify the destination application by port number.",
+    "gridArea": "dest",
+    "color": "info"
+  },
+  {
+    "headerType": "udp",
+    "name": "Length (16)",
+    "description": "A 16-bit field that indicates the length of the UDP datagram header.",
+    "gridArea": "ln",
+    "color": "primary"
+  },
+  {
+    "headerType": "udp",
+    "name": "Checksum (16)",
+    "description": "A 16-bit field used for error checking of the datagram header and data.",
+    "gridArea": "check",
+    "color": "warning"
+  },
+  {
+    "headerType": "udp",
+    "name": "Application Layer Data (Size varies)",
+    "description": null,
+    "gridArea": "app",
+    "color": "secondary"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Source Port (16)",
+    "description": "A 16-bit field used to identify the source application by port number.",
+    "gridArea": "src",
+    "color": "primary"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Destination Port (16)",
+    "description": "A 16-bit field used to identify the destination application by port number.",
+    "gridArea": "dst",
+    "color": "success"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Sequence Number (32)",
+    "description": "A 32-bit field used for data reassembly purposes.",
+    "gridArea": "sqn",
+    "color": "info"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Acknowledgment Number (32)",
+    "description": "A 32-bit field used to indicate that data has been received and the next byte expected from the source.",
+    "gridArea": "ack",
+    "color": "warning"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Header Length (4)",
+    "description": "A 4-bit field known as ʺdata offsetʺ that indicates the length of the TCP segment header.",
+    "gridArea": "hl",
+    "color": "primary"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Reserved (6)",
+    "description": "A 6-bit field that is reserved for future use.",
+    "gridArea": "res",
+    "color": "success"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Control bits (6)",
+    "description": "A 6-bit field used that includes bit codes, or flags, which indicate the purpose and function of the TCP segment.",
+    "gridArea": "cont",
+    "color": "info"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Window (16)",
+    "description": "A 16-bit field used to indicate the number of bytes that can be accepted at one time",
+    "gridArea": "wd",
+    "color": "warning"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Checksum (16)",
+    "description": "A 16-bit field used for error checking of the segment header and data.",
+    "gridArea": "check",
+    "color": "primary"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Urgent (16)",
+    "description": "A 16-bit field used to indicate if the contained data is urgent.",
+    "gridArea": "urg",
+    "color": "info"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Options (0 or 32 if any)",
+    "description": null,
+    "gridArea": "opt",
+    "color": "secondary"
+  },
+  {
+    "headerType": "tcp",
+    "name": "Application Layer Data (Size varies)",
+    "description": null,
+    "gridArea": "app",
+    "color": "secondary"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Version",
+    "description": "This will be for v6, as opposed to v4, a 4 bit field= 0110",
+    "gridArea": "version",
+    "color": "primary"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Traffic Class",
+    "description": "Used for QoS: Equivalent to DiffServ–DS field",
+    "gridArea": "traffic",
+    "color": "success"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Flow Label",
+    "description": "Informs device to handle identical flow labels the same way, 20 bit field",
+    "gridArea": "flow",
+    "color": "info"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Payload Length",
+    "description": "This 16-bit field indicates the length of the data portion or payload of the IPv6 packet",
+    "gridArea": "pl",
+    "color": "warning"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Next Header",
+    "description": "I.D.s next level protocol: ICMP, TCP, UDP, etc.",
+    "gridArea": "nh",
+    "color": "primary"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Hop Limit",
+    "description": "Replaces TTL field Layer 3 hop count",
+    "gridArea": "hl",
+    "color": "success"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Source IP Address",
+    "description": "128 bit source address",
+    "gridArea": "src",
+    "color": "info"
+  },
+  {
+    "headerType": "ipv6",
+    "name": "Destination IP Address",
+    "description": "128 bit destination address",
+    "gridArea": "dst",
+    "color": "success"
+  }
+]
